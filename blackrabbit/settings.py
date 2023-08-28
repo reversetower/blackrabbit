@@ -80,12 +80,8 @@ WSGI_APPLICATION = 'blackrabbit.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'data',                       
-        'USER': 'root',
-        'PASSWORD': 'AmaneKanata',
-        'HOST': '',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
